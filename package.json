@@ -1,0 +1,25 @@
+{
+  "name": "echarts-cursors",
+  "version": "1.0.0",
+  "description": "Cursors plugin for ECharts",
+  "main": "dist/echarts-cursors.js",
+  "scripts": {
+    "build": "tsc && npm run build-examples",
+    "build-examples": "tsc --project tsconfig.examples.json",
+    "watch": "tsc --watch",
+    "watch-examples": "npm run build-examples -- --watch",
+    "serve-example": "parcel ./examples/example.html"
+  },
+  "repository": "git@github.com:brianehenry/echarts-cursors.git",
+  "author": "Brian Henry <brian.henry@ni.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "echarts": "^5.0.2"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "echarts": "^5.0.2",
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.2.3"
+  }
+}
