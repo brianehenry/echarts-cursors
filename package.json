@@ -4,11 +4,9 @@
   "description": "Cursors plugin for ECharts",
   "main": "dist/echarts-cursors.js",
   "scripts": {
-    "build": "tsc && npm run build-examples",
-    "build-examples": "tsc --project tsconfig.examples.json",
+    "build": "tsc",
     "watch": "tsc --watch",
-    "watch-examples": "npm run build-examples -- --watch",
-    "serve-example": "parcel ./examples/example.html"
+    "serve-example": "parcel ./examples/example.html --out-dir examples/dist --open"
   },
   "repository": "git@github.com:brianehenry/echarts-cursors.git",
   "author": "Brian Henry <brian.henry@ni.com>",
@@ -21,5 +19,8 @@
     "echarts": "^5.0.2",
     "parcel-bundler": "^1.12.5",
     "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "zrender": "^5.0.4"
   }
 }
