@@ -8,6 +8,6 @@
       "strict": false
   },
   "files": [
-      "src/cursors-plugin.ts"
+      "index.ts"
   ]
 }
