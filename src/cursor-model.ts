@@ -5,7 +5,6 @@ export interface CursorOption extends ComponentOption {
   mainType?: 'cursor';
   
   xAxisIndex?: number;
-  yAxisIndex?: number;
   xPosition?: number;
 }
 
